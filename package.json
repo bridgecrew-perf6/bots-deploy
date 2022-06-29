@@ -1,0 +1,12 @@
+{
+  "name": "kyles-bots-deploy",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "pm2": "^5.2.0"
+  },
+  "scripts": {
+    "start": "./node_modules/pm2/bin/pm2-runtime ./process.json",
+    "poststart":  "node ./node_modules/pm2/bin/pm2 logs"
+  }
+}
